@@ -20,24 +20,11 @@ VERBS -  use, see, release
 |              | Working?        |
 |              | See             |
 |DockingStation| Release_bike    |
----------------|------------------
 
 DOMAIN MODEL
 
 
-Bike 
-^
-|
-working?
-|
-v
-true/false
+Bike <------working? ------->true/false
 
-DockingStation
-^
-| 
-release_bike 
-|
-v
-Bike
+DockingStation <-------- release_bike---------> Bike
 
