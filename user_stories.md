@@ -12,14 +12,15 @@ I'd like to see if a bike is working
 NOUNS -  person, bike, docking station
 VERBS -  use, see, release
 
-OBJECT(nouns) | MESSAGES(verbs)
-**************|****************
-Person        | 
-Bike          | Use_bike
-              | Working?
-              | See
-DockingStation| Release_bike
-
+----------------------------------
+|OBJECT(nouns) | MESSAGES(verbs) |
+|--------------|-----------------|
+|Person        |                 |
+|Bike          | Use_bike        |
+|              | Working?        |
+|              | See             |
+|DockingStation| Release_bike    |
+---------------|------------------
 
 DOMAIN MODEL
 
