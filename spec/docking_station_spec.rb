@@ -8,6 +8,10 @@ describe DockingStation do
     expect(bike).to be_working
   end
 
+  it 'doesnt have enough bikes' do 
+   expect {subject.release_bike }.to raise_error('No bikes available!')
+  end
+
   it 'docks something' do
     bike = Bike.new
     expect(subject.dock(bike)).to eq bike
