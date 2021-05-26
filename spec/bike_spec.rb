@@ -1,4 +1,4 @@
-require '../lib/bike.rb'
+require 'bike'
 
 describe Bike do
     it {is_expected.respond_to?(:working?)}
