@@ -1,13 +1,30 @@
 require_relative 'bike'
 
 class DockingStation
+<<<<<<< HEAD
+attr_reader :bike
+  
+  #def initialize(bike)
+   # 
+  #end  
+
+  def release_bike
+    Bike.new
+  end  
+  def dock_bike(bike) 
+    @bike = bike 
+=======
   attr_reader :bike
 
   def release_bike
     unless @bike
       fail 'No bikes available!' 
     end
+<<<<<<< HEAD
     @bike
+=======
+>>>>>>> c8714581eac8a1fe1bf8bb417929becebdf4fcbb
+>>>>>>> c09b98eb70086ad90bcba754ec8005e0ac855ac7
   end   
 
   def dock(bike)
@@ -15,7 +32,8 @@ class DockingStation
   end
 end
 
-
+#DockingStation.new(bike)
+#bike.dock_bike
 
 
 # Error type: NameError (uninitialized constant DockingStation)
