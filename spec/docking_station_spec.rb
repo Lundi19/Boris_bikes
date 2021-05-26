@@ -1,4 +1,4 @@
-require 'docking_station'
+require '../lib/docking_station'
 
 describe DockingStation do
   it {is_expected.respond_to?(:release_bike)}
